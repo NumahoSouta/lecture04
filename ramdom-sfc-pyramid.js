@@ -9,22 +9,12 @@ var SFCPyramid = function(n){
  return message;
 };
 
-
-var createNumber = function(n){
- var tmp = Math.random()*n;
- var result = Math.floor(tmp);
- return result;
-};
-
-createNumber(100);
-
-
 var output;
 var row = 1;
-var n = createNumber;
+var n = Math.floor(Math.random()*100);
 
  while(row <=n){
   output = SFCPyramid(row);
   console.log(output);
   row  = row + 1;
-};
+}
